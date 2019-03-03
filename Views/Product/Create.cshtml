@@ -1,0 +1,13 @@
+@model midterm.Models.Product
+
+<h1>Create Product</h1> 
+<form action="Create" method="post">
+    <input type="text" placeholder="product name" asp-for="@Model.product_name" />
+    <br>
+    <input type="text" placeholder="product qty" asp-for="@Model.product_qty" />
+    <br>
+    <input type="text" placeholder="product price" asp-for="@Model.product_price" />
+    <br>
+    <button type="submit">Add</button>
+
+</form>

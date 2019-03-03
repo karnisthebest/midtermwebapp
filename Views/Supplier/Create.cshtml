@@ -1,0 +1,12 @@
+@model midterm.Models.Supplier
+
+<h1>Create Supplier</h1> 
+<form action="Create" method="post">
+    <input type="text" placeholder="supplier name" asp-for="@Model.supplier_name" />
+    <br>
+    <input type="text" placeholder="supplier address" asp-for="@Model.supplier_address" />
+    <br>
+    
+    <button type="submit">Add</button>
+
+</form>

@@ -1,0 +1,14 @@
+@model midterm.Models.Product
+
+<h2>Edit Product</h2>
+<form action="Edit" method="post">
+    <input type="text" asp-for="@Model.product_id" hidden />
+    name: <input type="text" asp-for="@Model.product_name" />
+    <br>
+    product: <input type="text" asp-for="@Model.product_qty" />
+    <br>
+    price: <input type="text" asp-for="@Model.product_price" />
+    <br>
+    <button type="submit">save</button>
+
+</form>

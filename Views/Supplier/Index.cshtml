@@ -1,0 +1,26 @@
+<h2>Index Supplier</h2>
+<a asp-action="Create"><button class="btn btn-primary">Create</button></a>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach(var item in Model){
+      <tr>
+        <td>@item.supplier_id</td>
+        <td>@item.supplier_name</td>
+        <td>
+          <a asp-controller="supplier" asp-action="Detail" asp-route-id="@item.supplier_id">Details</a>
+          <a asp-controller="supplier" asp-action="Edit" asp-route-id="@item.supplier_id">Edit</a>
+
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>

@@ -1,0 +1,11 @@
+@model midterm.Models.Supplier
+
+<h2>Edit Supplier</h2>
+<form action="Edit" method="post">
+    <input type="text" asp-for="@Model.supplier_id" hidden />
+    name: <input type="text" asp-for="@Model.supplier_name" />
+    <br>
+    Address: <input type="text" asp-for="@Model.supplier_address" />
+    <br>
+    <button type="submit">Save</button>
+</form>
